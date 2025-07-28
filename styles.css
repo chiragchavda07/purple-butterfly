@@ -101,6 +101,16 @@ header h1 {
   line-height: 1.5;
 }
 
+.message-content {
+  text-align: left;
+  padding: 0 1rem;
+  line-height: 1.6;
+}
+
+.message-content p {
+  margin-bottom: 1rem;
+}
+
 footer {
   margin-top: auto;
   padding: 1rem 0;
@@ -187,6 +197,41 @@ footer {
     padding: 1rem;
     max-width: 100%;
     margin: 0 0 2rem 0;
+  }
+
+  #musicToggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #d94f70;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+    box-shadow: 0 0 10px #d94f70;
+    animation: pulse 2s infinite;
+  }
+
+  #musicToggle:hover,
+  #musicToggle:focus {
+    box-shadow: 0 0 20px #f8b500;
+    outline: none;
+  }
+
+  @keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(217, 79, 112, 0.7);
+    }
+    70% {
+      box-shadow: 0 0 0 10px rgba(217, 79, 112, 0);
+    }
+    100% {
+      box-shadow: 0 0 0 0 rgba(217, 79, 112, 0);
+    }
   }
 
   footer {
